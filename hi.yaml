@@ -1,1 +1,6 @@
-echo "hi"
+- name: ping
+  hosts: web
+  tasks: pinging
+  - name: ping
+    ansible.builtin.ping:
+    
