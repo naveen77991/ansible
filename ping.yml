@@ -1,0 +1,6 @@
+- name: ansible to ping module 
+  hosts: web
+  tasks: 
+    - name: ansible to ping 
+      ansible.builtin.ping:
+        msg: "hi"
