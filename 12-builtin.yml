@@ -1,0 +1,11 @@
+- name: ansible to install 
+  hosts: web  
+  become: yes 
+  tasks: 
+    - name: ansible to write 
+      ansible.builtin.command: cp etc/passwd | grep -i root 
+      register: user 
+
+    - name: print info 
+      ansible.builtin.debug: 
+         msg: "{{user}}" 
