@@ -1,0 +1,9 @@
+- name: ansible variables 
+  hosts: web 
+  vars: 
+    name: "nacveen"
+    course: "devops"
+  tasks: 
+    - name: ansible playlevel variables 
+      ansible.builtin.debug: 
+        msg: "hi my name is {{ name }}"
