@@ -5,5 +5,5 @@
   tasks: 
     - name: ansible to  write 
       ansible.builtin.debug: 
-        msg:"hi my name is naveen "
+        msg: "hi my name is naveen"
       when: is_alive == false
