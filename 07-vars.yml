@@ -7,4 +7,5 @@
    - name: "ansible to print a msg" 
      ansible.builtin.debug: 
         msg: "{{ username }}"
+        
    
