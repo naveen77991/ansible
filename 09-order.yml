@@ -1,0 +1,13 @@
+- name: ANSIBLE TO ORDER 
+  hosts: web  
+  vars: 
+    course: task 
+  vars_files: 
+   - course.yml  
+
+  tasks: 
+    - name: ansible to vars  
+      vars: 
+        course: local2 
+      ansible.builtin.debug: 
+        msg: "hi my course is {{ course }}"
