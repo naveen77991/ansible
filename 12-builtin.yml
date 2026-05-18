@@ -3,7 +3,7 @@
   become: yes 
   tasks: 
     - name: ansible to write 
-      ansible.builtin.shell: cat /etc/passwd | grep -i root 
+      ansible.builtin.command: cat /etc/passwd | grep -i root 
       register: user 
 
     - name: print info 
