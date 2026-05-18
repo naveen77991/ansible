@@ -1,0 +1,9 @@
+- name: ansible to vars 
+  hosts: web 
+  vars: 
+     course: "devops"
+  tasks: 
+    - name: ansible to install
+      course: "aws"
+      ansible.builtin.debug:
+        msg: "my course is {{ course }}"
