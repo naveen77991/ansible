@@ -1,5 +1,6 @@
 - name: ansible to variables 
   hosts: web
+  become: yes 
   tasks: 
    - name: ansible to a variable 
      ansible.builtin.debug: 
