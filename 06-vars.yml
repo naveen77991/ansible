@@ -5,5 +5,5 @@
   tasks: 
     - name: ansible to install 
       ansible.builtin.debug: 
-        msg"{{ name }}"
+        msg: "{{ name }}"
       
