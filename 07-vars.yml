@@ -3,7 +3,7 @@
   vars_prompt: 
    - name: username
      prompt: "enter ur username"
-  tasks 
+  tasks: 
     - name: "ansible to  print "
       ansible.builtin.debug:
         msg: "{{ name }}"
