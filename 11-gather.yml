@@ -1,8 +1,11 @@
 - name: ansible to write a gather facts 
   hosts: web
   become: yes 
+  gather_facts: false
   tasks: 
    - name: ansible to write  
      ansible.builtin.debug: 
-       msg: "{{ ansible_facts }}"
+       msg: "{{ ansible_facts }}" 
+
+       
     
