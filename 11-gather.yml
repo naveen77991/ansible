@@ -1,0 +1,8 @@
+- name: ansible to write a gather facts 
+  hosts: web
+  become: yes 
+  tasks: 
+   - name: ansible to write  
+     ansible.builtin.debug: 
+       msg: "hi my name is naveen"
+     when: "{{ansible_facts}}"  
