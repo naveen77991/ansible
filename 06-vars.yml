@@ -1,0 +1,9 @@
+- name: ansible to install 
+  hosts: web 
+  vars_files:
+    - course.yml
+  tasks: 
+    - name: ansible to install 
+      ansible.builtin.debug: 
+        msg"{{ name }}"
+      
