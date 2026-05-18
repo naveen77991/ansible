@@ -1,7 +1,6 @@
 - name: ANSIBLE TO ORDER 
   hosts: web  
-  vars: 
-    course: task 
+  
    
   
       
