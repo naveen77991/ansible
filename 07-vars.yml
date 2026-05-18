@@ -6,4 +6,4 @@
   tasks: 
     - name: "ansible to  print "
       ansible.builtin.debug:
-        msg: "{{ name }}"
+        msg: "{{username }}"
