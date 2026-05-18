@@ -4,6 +4,7 @@
      course: "devops"
   tasks: 
     - name: ansible to install
-      course: "aws"
+      vars: 
+       course: "aws"
       ansible.builtin.debug:
         msg: "my course is {{ course }}"
