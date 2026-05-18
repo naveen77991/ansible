@@ -3,7 +3,11 @@
   vars: 
     course: task 
   vars_files: 
-   - course.yml  
+   - course.yml    
+  vars_prompt: 
+   - name: course 
+     prompt: "plz eneter ur username"
+      
 
   tasks: 
     - name: ansible to vars  
