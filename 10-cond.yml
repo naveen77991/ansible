@@ -1,9 +1,11 @@
-- name: ansible to write conditions
+- name: ansible to  writwe wehen condition 
   hosts: web 
+  become: yes
   vars: 
-   is_alive: false
-  tasks: 
-    - name: ansible to  write 
+   num: 7
+  tasks:  
+    - name: ansible to write 
+     
       ansible.builtin.debug: 
-        msg: "hi my name is naveen"
-      when: is_alive == false
+        msg: "hi my name is anveen"
+      when: num >7  
